@@ -86,7 +86,7 @@ export default function Home() {
           >
             {/* PART 1. EVANGELISM */}
             <div className="mb-16">
-              <h2 className="text-2xl md:text-3xl font-bold mb-8 tracking-[0.15em] uppercase">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 tracking-[0.15em] uppercase">
                 PART 1. EVANGELISM
               </h2>
               <div className="space-y-4">
@@ -104,7 +104,7 @@ export default function Home() {
 
             {/* PART 2. EDIFICATION */}
             <div className="mb-16">
-              <h2 className="text-2xl md:text-3xl font-bold mb-8 tracking-[0.15em] uppercase">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 tracking-[0.15em] uppercase">
                 PART 2. EDIFICATION
               </h2>
               <div className="space-y-4">
@@ -115,7 +115,7 @@ export default function Home() {
 
             {/* PART 3. EXALTATION */}
             <div className="mb-16">
-              <h2 className="text-2xl md:text-3xl font-bold mb-8 tracking-[0.15em] uppercase">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 tracking-[0.15em] uppercase">
                 PART 3. EXALTATION
               </h2>
               <div className="space-y-4">
@@ -130,16 +130,16 @@ export default function Home() {
 
             {/* Master of Ceremony */}
             <div className="text-center mt-16 mb-12">
-              <h3 className="text-lg md:text-xl font-bold tracking-[0.1em] mb-2 uppercase">
+              <h3 className="text-xl md:text-2xl font-bold tracking-[0.1em] mb-2 uppercase">
                 GANESSA ROSE G. CUEVAS
               </h3>
-              <p className="text-sm tracking-[0.05em] font-light uppercase">
+              <p className="text-base tracking-[0.05em] font-light uppercase">
                 MASTER OF THE CEREMONY
               </p>
             </div>
 
             {/* Bible Verse */}
-            <div className="text-center text-xs md:text-sm mx-auto leading-relaxed mt-12">
+            <div className="text-center text-sm md:text-base mx-auto leading-relaxed mt-12">
               <p className="tracking-wide leading-relaxed uppercase mb-4">
                 FOR IT IS BY GRACE YOU HAVE BEEN SAVED, THROUGH FAITH—AND THIS 
                 IS NOT FROM YOURSELVES, IT IS THE GIFT OF GOD— NOT BY WORKS, SO 
@@ -164,10 +164,10 @@ interface ProgramItemProps {
 function ProgramItem({ time, activity }: ProgramItemProps) {
   return (
     <div className="flex items-start py-2">
-      <div className="w-1/2 flex-shrink-0 text-sm md:text-base font-medium tracking-wide text-center pr-2">
+      <div className="w-1/2 flex-shrink-0 text-base md:text-lg font-medium tracking-wide text-center pr-2">
         {time}
       </div>
-      <div className="w-1/2 text-sm md:text-base tracking-wide font-light uppercase text-left pl-2">
+      <div className="w-1/2 text-base md:text-lg tracking-wide font-light uppercase text-left pl-2">
         {activity}
       </div>
     </div>
