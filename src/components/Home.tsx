@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
+import { Camera } from "lucide-react"
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -7,6 +8,11 @@ export default function Home() {
   useEffect(() => {
     setIsLoaded(true)
   }, [])
+
+  const handleShareClick = () => {
+    // Replace with your actual Google Drive folder link
+    window.open('https://photos.app.goo.gl/hUTArmFfLssrwRdYA', '_blank')
+  }
 
   const fadeIn = {
     hidden: { opacity: 0 },
@@ -77,6 +83,17 @@ export default function Home() {
                 className="mx-auto w-full h-auto"
               />
             </motion.div>
+
+            {/* Share Button */}
+            <div className="text-center mt-20 mb-20">
+              <button
+                onClick={handleShareClick}
+                className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+              >
+                <span className="text-base md:text-lg">Share your moments here</span>
+                <Camera size={24} />
+              </button>
+            </div>
 
           <motion.div
             initial="hidden"
